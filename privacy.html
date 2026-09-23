@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="How Jeremy Health Coach accesses, uses, stores, and shares Google Health data.">
+  <title>Privacy Notice | Jeremy Health Coach</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="index.html"><img src="mark.svg" width="36" height="36" alt="">Jeremy Health Coach</a>
+    <nav aria-label="Main navigation"><a href="index.html">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">Jeremy Health Coach</p>
+    <h1>Privacy notice</h1>
+    <p class="meta">Last updated September 23, 2026</p>
+    <p class="lead">This notice covers a personal Google Health integration maintained by the GitHub account <a href="https://github.com/jeremyintal">jeremyintal</a>. It also explains how these informational pages differ from the local sync and coaching workflow.</p>
+    <section aria-labelledby="collected">
+      <h2 id="collected">Information accessed</h2>
+      <p>After the owner authorizes Google access, the importer retrieves steps, exercise sessions, heart rate, resting heart rate, heart-rate variability, weight, sleep, oxygen saturation, and respiratory rate. Records can include timestamps, time-zone offsets, record identifiers, and measurement metadata.</p>
+      <p>The three Google permission bundles cover activity and fitness, health metrics and measurements, and sleep. These bundles can permit access to more fields than the current importer requests. The importer uses a fixed list of the nine data types above. It requests read-only access, not location or permission to create, modify, or delete Google Health records.</p>
+    </section>
+    <section aria-labelledby="use">
+      <h2 id="use">Purpose and sharing</h2>
+      <p>The records support the owner's personal wellness review, including activity, sleep, and recovery trends. The sync program exchanges authorization information and makes data requests directly with Google over HTTPS.</p>
+      <p>At the owner's request, selected records or summaries may be included in an OpenAI Codex conversation for personalized coaching. OpenAI and its service providers then process that information under the applicable OpenAI terms and account settings. This processing is separate from the local download; it is not solely on-device. The integration does not claim that deleting a local file also deletes a conversation or a provider's retained copy.</p>
+      <p>The integration does not sell health data, use it for advertising, or publish it on GitHub. It is not intended to train general-purpose AI models. Before enabling recurring AI analysis, the owner must confirm that the relevant account's model-improvement/data-sharing settings exclude these records.</p>
+      <p>Jeremy Health Coach's use and transfer of information received through the Google Health API will comply with the <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">Google Health API Developer and User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section aria-labelledby="security">
+      <h2 id="security">Local storage and protection</h2>
+      <p>OAuth access and refresh credentials are stored in macOS Keychain. Health exports are stored as JSON in the local project, with access limited by owner-only file and directory permissions. Exports and credentials are excluded from Git.</p>
+      <p>The importer does not encrypt export files itself. Encryption and protection of those files depend on the Mac's storage configuration. FileVault or an equivalent appropriate protection must be configured and verified before unattended use. Any cloud backup or folder-sync service configured by the owner may create additional copies; those services and their protection settings must also be reviewed.</p>
+      <p>No password, token, or downloaded OAuth credential file should be placed in a public repository or shared in a support request.</p>
+    </section>
+    <section aria-labelledby="retention">
+      <h2 id="retention">Retention and deletion</h2>
+      <p>Each successful import saves a current export and a timestamped archive. These local files remain until the owner deletes them; automatic archive expiration is not implemented. Revoking Google authorization stops future authorized access, but does not erase existing downloads.</p>
+      <p>To disconnect, remove Jeremy Health Coach from the Google Account's third-party connections. To remove the local connection and downloaded data, delete this integration's Keychain entry, its downloaded OAuth client file, and the local Google Health export directory, including archives. Other project notes, backups, and provider-held copies must be handled separately.</p>
+      <p>Information included in Codex conversations follows the applicable OpenAI retention and deletion controls. The owner must use those controls for conversation deletion; this local importer cannot perform it automatically.</p>
+    </section>
+    <section aria-labelledby="website">
+      <h2 id="website">Website visitors</h2>
+      <p>These static pages contain no health-data uploads, sign-in flow, analytics scripts, advertising, cookies set by this site, or application storage in the visitor's browser. These pages are hosted on GitHub Pages. GitHub receives ordinary website requests and logs visitor IP addresses for security under its own privacy practices. This does not give GitHub access to the local health-data directory or Keychain.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Questions and changes</h2>
+      <p>The maintainer is <a href="https://github.com/jeremyintal">jeremyintal on GitHub</a>. Use the contact options made available by the maintainer; never post health records or credentials publicly. This notice must be updated before material changes to collection, use, or sharing. Additional Google permissions require a new authorization request.</p>
+    </section>
+  </main>
+  <footer><a href="index.html">Jeremy Health Coach</a><a href="privacy.html" aria-current="page">Privacy notice</a><a href="terms.html">Terms of use</a></footer>
+</body>
+</html>

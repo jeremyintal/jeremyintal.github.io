@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="App information for Jeremy Health Coach, a personal, read-only Google Health integration.">
+  <title>Jeremy Health Coach</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="index.html"><img src="mark.svg" width="36" height="36" alt="">Jeremy Health Coach</a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">Personal-use integration</p>
+    <h1>Jeremy Health Coach</h1>
+    <p class="lead">A private, read-only connection between the owner's Google Health records and a personal wellness-coaching workflow on their Mac.</p>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose</h2>
+      <p>The integration imports recent activity, sleep, and selected health measurements for personal trend review. The owner can use these records in an OpenAI Codex conversation to discuss training, recovery, and everyday habits.</p>
+      <p>This is a personal project maintained by <a href="https://github.com/jeremyintal">jeremyintal</a>, not a public sign-up service or a product operated by Google, Fitbit, or OpenAI.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Data access and use</h2>
+      <p>Google authorization is requested for three read-only categories: activity and fitness, health metrics and measurements, and sleep. The current importer retrieves steps, exercise, heart rate, resting heart rate, heart-rate variability, weight, sleep, oxygen saturation, and respiratory rate. It does not request location or write permissions.</p>
+      <p>Downloaded records are stored in the owner's local project. When the owner requests AI-assisted coaching, selected records or summaries are sent to OpenAI for that task. Coaching is therefore not entirely offline. Storage, sharing, retention, and deletion are described in the <a href="privacy.html">privacy notice</a>.</p>
+    </section>
+    <section aria-labelledby="limits">
+      <h2 id="limits">Limits</h2>
+      <p>Wearable measurements and AI-generated interpretations can be incomplete or inaccurate. This project is for general wellness, not diagnosis, treatment, clinical monitoring, or emergency care. It does not replace a qualified health professional.</p>
+    </section>
+    <section aria-labelledby="public">
+      <h2 id="public">This public information site</h2>
+      <p>These pages explain the integration. They contain no health records, account credentials, sign-in form, or live connection to Google Health.</p>
+    </section>
+  </main>
+  <footer><span>Jeremy Health Coach</span><a href="privacy.html">Privacy notice</a><a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
